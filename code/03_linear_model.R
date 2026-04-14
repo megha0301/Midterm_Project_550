@@ -10,6 +10,15 @@ data <- read_csv(
   file = here::here("data/f75_interim.csv")
 )
 
+sex_called <- Sys.getenv("R_CONFIG_ACTIVE")
+config_list <- config::get(
+  config = sex_called
+)
+
+if (!is.null(config_list$s) && config_list$s != "default") {
+  data <- data[data$sex == config_list$s,]
+}
+
 #create change in muac variable from baseline to end for modeling
 data<-data |>
   dplyr::mutate(change_muac = muac2-muac)

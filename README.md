@@ -20,4 +20,6 @@ __Mele__ is responsible for creating Table 2. This table contains information fo
 `make ` in the terminal will generate the report
 
 ## Customization
-A config gile will be created with sex (M or F) of the child as the parameter for customization. The output file will specify which sex is being reported on.
+A config file will be created with sex (M or F) of the child as the parameter for customization. The output file will specify which sex is being reported on.
+To customize, use terminal:
+  `export R_CONFIG_ACTIVE=` and set to male, female, or default. This will modify the boxplot and regression table. 
