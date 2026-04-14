@@ -16,5 +16,8 @@ __Eleane__ is responsible for creating Table 1. This table should compare baseli
 __Sarina__ is responsible for creating a boxplot that shows changes in MUAC from baseline to endlines across arms.
 __Mele__ is responsible for creating Table 2. This table contains information for a linear regression model that predicts change in MUAC by arm.
 
+## Running the Code
+`make ` in the terminal will generate the report
+
 ## Customization
 A config gile will be created with sex (M or F) of the child as the parameter for customization. The output file will specify which sex is being reported on.

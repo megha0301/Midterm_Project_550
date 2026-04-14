@@ -1,0 +1,39 @@
+---
+title: Descriptive Analysis of f75 Milk Formula
+author: Group 
+output: html_document
+---
+
+```{r, here-i-am, include = FALSE}
+here::i_am(
+  "report_midterm.Rmd"
+)
+```
+
+Characteristics of the cohort are displayed below.
+```{r, load-table-one, echo = FALSE, warning=FALSE}
+table_one <- readRDS(
+  here::here("output/table_one.rds")
+)
+
+table_one
+```
+
+
+Boxplot that shows changes in MUAC from baseline to endlines across arms.
+```{r, echo = FALSE, warning=FALSE}
+boxplot <- readRDS(
+  here::here("output/boxplot.rds")
+)
+boxplot
+```
+
+Linear regression model that predicts change in MUAC by arm.
+```{r, echo = FALSE, warning=FALSE}
+regression_table <- readRDS(
+  here::here("output/regression_table.rds")
+)
+
+regression_table
+
+```
