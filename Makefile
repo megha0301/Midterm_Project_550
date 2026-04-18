@@ -20,3 +20,7 @@ components: output/table_one.rds output/boxplot.rds output/regression_table.rds
 
 clean: 
 	rm -f output/*.rds && rm -f *.html
+	
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt=FALSE)"

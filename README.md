@@ -17,6 +17,7 @@ __Sarina__ is responsible for creating a boxplot that shows changes in MUAC from
 __Mele__ is responsible for creating Table 2. This table contains information for a linear regression model that predicts change in MUAC by arm.
 
 ## Running the Code
+`make install` in the terminal will load packages needed for the report
 `make ` in the terminal will generate the report
 
 ## Customization
