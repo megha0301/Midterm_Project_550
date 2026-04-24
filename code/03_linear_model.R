@@ -4,6 +4,10 @@ here::i_am("code/03_linear_model.R")
 #library installation
 library(tidyverse)
 library(gtsummary)
+library(broom)
+library(broom.helpers)
+library(parameters)
+library(car)
 
 #upload data
 data <- read_csv(
